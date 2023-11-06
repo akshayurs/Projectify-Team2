@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tour Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Tour Website</header>
+    <h1>List of Places</h1>
+    <ul>
+      <% places.forEach(function(i) { %>
+      <li>
+        <strong>Place:</strong> <%= i.place %><br />
+        <strong>PinCode:</strong> <%= i.pincode %>
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>
